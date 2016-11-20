@@ -20,6 +20,7 @@ public class Numbers {
     /**
      *  That was first method and I was sure I need to use recursion
      *  for making it adaptive. But it's the slowest version.
+     *  lead time ~ 138
      */
 
     private static void seek1(int x){
@@ -58,6 +59,7 @@ public class Numbers {
     /**
      * Second version. Faster then first and it disappoints me,
      * I thought recursive method will giv me advantage
+     * lead time ~ 30
      */
     private static void seek2(int x){
 
@@ -94,6 +96,8 @@ public class Numbers {
 
     /**
      * Hardcode version.
+     * Ugly, but the fastest of all.
+     * lead time ~ 15
      */
 
     private static void seek3(){
