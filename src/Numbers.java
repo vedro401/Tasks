@@ -14,11 +14,10 @@ public class Numbers {
         seek3();
         System.out.println("seek 3 time = " + (System.currentTimeMillis() - time));
 
-
     }
 
     /**
-     *  That was first method and I was sure I need to use recursion
+     *  That was the first method and I was sure I needed to use recursion
      *  for making it adaptive. But it's the slowest version.
      *  lead time ~ 138
      */
@@ -38,7 +37,7 @@ public class Numbers {
             degT *= 10;
         }
         lim = n*degN;
-        System.out.println("lim " + lim);
+//        System.out.println("lim " + lim);
 
         for (int i = 1; i < 10; i++) {
             calc(i*10,degs[i],i, lim);
@@ -57,8 +56,8 @@ public class Numbers {
     }
 
     /**
-     * Second version. Faster then first and it disappoints me,
-     * I thought recursive method will giv me advantage
+     * Second version. This one is faster then the first and it disappoints me,
+     * because I thought that the recursive method would be better
      * lead time ~ 30
      */
     private static void seek2(int x){
@@ -96,7 +95,7 @@ public class Numbers {
 
     /**
      * Hardcode version.
-     * Ugly, but the fastest of all.
+     * Ugly, but the fastest one.
      * lead time ~ 15
      */
 
